@@ -5,7 +5,6 @@ from PIL import Image, ImageDraw
 from io import BytesIO
 import gradio as gr
 import cv2
-cv2.setBackend(cv2.BACKEND_OPENCV)
 
 # Load YOLOv5 model
 model = torch.hub.load('ultralytics/yolov5', 'custom', 'demo/best.pt')  # force_reload=True to update
